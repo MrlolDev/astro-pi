@@ -14,7 +14,9 @@ m = (70,111,17) # Rosa Oscuro
 r = (137, 170, 1) # Rosa Claro
 n = (0, 0, 0) # Negro
 b = (255,255,255)
-for i in range(25):
+for i in range(27):
+    rgb = sense.color # obtener el color del sensor
+    b = (rgb.red, rgb.green, rgb.blue)
     imagen = [
         b,b,b,b,b,b,b,b,
         b,b,m,m,r,b,b,b,
