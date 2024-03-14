@@ -17,6 +17,8 @@ y = (189,121,132) # Rosa Oscuro
 t = (111,57,57) # Rosa profundo
 b = (255,255,255)
 for i in range(25):
+    rgb = sense.color # obtener el color del sensor
+    r = (rgb.red, rgb.green, rgb.blue)
     imagen = [
     t,t,r,r,r,r,t,t,
     r,t,r,r,r,r,t,r,
